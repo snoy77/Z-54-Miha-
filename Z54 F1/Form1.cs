@@ -66,14 +66,22 @@ namespace Z54_F1
             }          
         }
 
+        private void Copytext(string text)
+        {
+            if(text != null & text != "")
+            {
+                Clipboard.SetText(text);
+            }
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(textBox3.Text);
+            Copytext(textBox3.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(textBox2.Text);
+            Copytext(textBox2.Text);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -94,6 +102,11 @@ namespace Z54_F1
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -41,26 +41,24 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(4, 10);
+            this.textBox1.Location = new System.Drawing.Point(8, 245);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(411, 240);
+            this.textBox1.Size = new System.Drawing.Size(421, 256);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -181,6 +179,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Настройки конструктора";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(36, 45);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(207, 18);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Номер строки - номер РИЧа";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(6, 45);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(24, 20);
+            this.textBox9.TabIndex = 17;
+            this.textBox9.Text = "2";
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -199,7 +217,7 @@
             this.textBox8.Size = new System.Drawing.Size(24, 20);
             this.textBox8.TabIndex = 15;
             this.textBox8.Text = "3";
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // checkBox1
             // 
@@ -238,42 +256,12 @@
             this.button4.Text = "Копировать";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.Red;
-            this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Location = new System.Drawing.Point(8, 245);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(421, 256);
-            this.groupBox3.TabIndex = 15;
-            this.groupBox3.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(36, 45);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(207, 18);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Номер строки - номер РИЧа";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(6, 45);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(24, 20);
-            this.textBox9.TabIndex = 17;
-            this.textBox9.Text = "2";
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(897, 539);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
@@ -287,8 +275,6 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,7 +300,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox9;
     }
